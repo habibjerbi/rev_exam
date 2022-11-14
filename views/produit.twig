@@ -1,0 +1,59 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+	<h1 style="text-align:center;">Ajouter un Produit - Examen Node JS</h1>
+    <hr/>
+	<form method="post" action="http://localhost:3000/produits/addProduit">
+		<table style="margin:auto;">
+			<tr>
+				<td>
+					<label>libelle</label>
+				</td>
+				<td>
+					<input type="text" name="libelle"/><br>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>price</label>
+				</td>
+				<td>
+					<input type="text" name="prix"/><br>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>description</label>
+				</td>
+				<td>
+					<input type="text" name="description"/><br>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>quantite</label>
+				</td>
+				<td>
+					<input type="text" name="quantite"/><br>
+				</td>
+			</tr>
+            	<tr>
+				<td>
+					<label>stock</label>
+				</td>
+				<td>
+					<input type="text" name="instock"/><br>
+                    
+                    
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<button type="submit">Ajouter</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+
+	
+{% endblock %}

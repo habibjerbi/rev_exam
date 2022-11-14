@@ -1,0 +1,22 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+	<form method="get" action="http://localhost:3000/users/getUser">
+		<table style="margin:auto;">
+			<tr>
+				<td>
+					<label>Email</label>
+				</td>
+				<td>
+					<input type="text" name="email"/><br>
+				</td>
+			</tr>
+            <tr>
+				<td colspan="2">
+					<button type="submit">trouver</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+	
+{% endblock %}

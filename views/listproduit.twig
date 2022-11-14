@@ -1,0 +1,32 @@
+<table border="1" style="margin:auto;">
+        <tr>
+          
+        </tr>
+        <tr>
+            <td>libelle</td>
+            <td>prix</td>
+            <td>desc</td>
+            <td>quantite</td>
+            <td>instock</td>
+            <td>suprimer</td>
+            <td>notifier admin</td>
+            
+        </tr>
+        {% for produit in produits %}
+        <tr>
+            <td>{{produit.libelle}}</td>
+            <td>{{produit.prix}}</td>
+             <td>{{produit.description}}</td>
+            <td>{{produit.quantite}}</td>
+            <td>{{produit.instock}}</td>
+
+            
+            
+            <td>
+            <button onclick="sendNotification()"><a href="http://localhost:3000/produits/deleteProduit/{{produit._id}}">Supprimer</a></button> 
+        <td>
+            <button onclick="sendNotification()"><a href="http://localhost:3000/produits/notif">Supprimer</a></button> 
+        
+        </tr>
+        {% endfor %}
+    </table>
